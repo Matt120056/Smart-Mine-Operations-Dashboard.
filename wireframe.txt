@@ -1,0 +1,14 @@
+Smart Mine Operations Dashboard
+
+-- Design Overview --
+The dashboard is designed as a central monitoring system for mine operators. It should provide a quick overview of the mine's current conditions, equipment, connected devices, and safety concerns.
+
+The main screen should include:
+- System and device status
+- Environmental sensor readings
+- Equipment activity and status
+- Safety alerts
+
+The layout should make imporant information easy to identify at a glance, with sensor readings and device status grouped together, equipment activity represented separately, and alerts clearly visible.
+
+The wireframe should remain low-fidelity and focus on the organization of information ratheer than visualy styling.
