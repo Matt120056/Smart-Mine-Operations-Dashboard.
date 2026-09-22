@@ -1,0 +1,9 @@
+Smart Mine Operations Dashboard: Our project is a mock mine-monitoring system that helps mine operators view key operational information in a single web dashboard. 
+
+In a mine, equipment conditions, environmental readings, and safety concerns need to be noticed quickly. When this information is distributed across multiple devices or checked manually, operators may miss changes that could lead to equipment failure, unsafe conditions, or delays. 
+
+The system will connect hardware such as sensors and a controller to a website. The dashboard will display live sensor readings, device status, and mine-operation data. It may show information such as temperature, vibration, equipment activity, air quality, or gas readings, and whether a device is online or offline. 
+
+When a sensor reading crosses a safe threshold, the system sends an alert so the operator can act right away. It's built for mine operators, supervisors, and maintenance teams. The project shows how linking hardware, collecting data, and using a web app can help people make safer, better-informed decisions underground.
+
+It also gives our team a practical way to integrate IoT hardware, programming, data, and web development into a single project.
