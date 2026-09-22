@@ -1,0 +1,78 @@
+STORYBOARD — Automated Mine Ventilation & Safety Dashboard
+Role: Storyteller
+Persona: Matt, a ventilation/ IT technician at an underground nickel mine
+
+--------------------------------------------------------
+PANEL 1 — The Problem
+--------------------------------------------------------
+Setting: Mine surface control room, early morning.
+Action: Matt sits at a desk surrounded by radios and paper logs.
+A radio crackles with a level supervisor asking whether it's
+safe to send a crew back into a section after a blast.
+Thought bubble: "I'm guessing based on a stopwatch and a gut feeling."
+Purpose: Establishes the problem — no real-time visibility into
+air quality, and re-entry decisions rely on manual timing/radio
+check-ins instead of actual sensor data.
+
+--------------------------------------------------------
+PANEL 2 — Opening the Dashboard
+--------------------------------------------------------
+Setting: Same control room, now with a tablet/monitor showing
+the Grafana dashboard.
+Action: Matt pulls up the live view — gas concentration,
+airflow, and fan status for every level, updating in real time.
+Thought bubble: "Now I can actually see what's happening down there."
+Purpose: Introduces the app and its core value — real-time,
+level-by-level visibility instead of guesswork.
+
+--------------------------------------------------------
+PANEL 3 — A Blast Event Fires
+--------------------------------------------------------
+Setting: Dashboard view, mid-shift.
+Action: A blast event alert appears on screen. The ventilation
+fans on that level automatically spike to full speed on their
+own — Matt watches the fan-speed panel jump without touching
+anything.
+Caption: "The system already reacted before I even saw the alert."
+Purpose: Shows the automation (VOD) doing its job — forcing
+ventilation immediately after a blast, without waiting on a
+human to notice and respond.
+
+--------------------------------------------------------
+PANEL 4 — Watching the Air Clear
+--------------------------------------------------------
+Setting: Close-up on the dashboard's gas-concentration graph
+and a "re-entry" status indicator.
+Action: Matt watches the CO/CO2 trend line fall in real time
+toward the safe threshold. A status panel counts down from
+"CLEARING" to "SAFE TO ENTER."
+Caption: "I don't have to guess when it's safe — the data tells me."
+Purpose: Demonstrates the safety payoff — a data-backed
+re-entry decision instead of a fixed, conservative wait time
+or a risky early guess.
+
+--------------------------------------------------------
+PANEL 5 — Giving the All-Clear
+--------------------------------------------------------
+Setting: Matt back on the radio, dashboard still visible
+beside her.
+Action: he radios the crew: "Level 2 is clear, gas levels are
+back to normal, you're good to head back in."
+Purpose: Closes the loop — the technology directly enables a
+faster, safer real-world decision and action.
+
+--------------------------------------------------------
+PANEL 6 — Looking Back at the Trends
+--------------------------------------------------------
+Setting: End of shift, Matt reviewing a historical chart on
+the dashboard.
+Action: Matt notices Level 2 consistently spikes higher after
+blasts than other levels, and flags it for a booster fan
+upgrade in that section.
+Caption: "The data's showing me patterns I'd never have caught
+from memory alone."
+Purpose: Shows the longer-term value of the historian/dashboard
+— not just real-time safety, but data-driven planning and
+continuous improvement.
+
+--------------------------------------------------------
