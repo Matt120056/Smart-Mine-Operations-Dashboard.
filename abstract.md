@@ -1,1 +1,0 @@
-# Smart Mine Operations Dashboard
