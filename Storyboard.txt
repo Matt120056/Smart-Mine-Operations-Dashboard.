@@ -78,3 +78,6 @@ Purpose: Shows the longer-term value of the historian/dashboard
 continuous improvement.
 
 --------------------------------------------------------
+When a sensor reading crosses a safe threshold, the system sends an alert so the operator can act right away. It's built for mine operators, supervisors, and maintenance teams. The project shows how linking hardware, collecting data, and using a web app can help people make safer, better-informed decisions underground.
+
+It also gives our team a practical way to integrate IoT hardware, programming, data, and web development into a single project.
