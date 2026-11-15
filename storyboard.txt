@@ -1,0 +1,227 @@
+================================================================
+SMART MINE OPERATIONS DASHBOARD
+Storyboard / Wireframe Walkthrough
+================================================================
+
+PURPOSE
+-------
+A simple two-page prototype for a mine monitoring and safety
+dashboard. It shows equipment, sensors and warnings at a glance
+so an operator can quickly see what is happening on site.
+
+FILES
+-----
+  index.html   -> Dashboard page
+  sensors.html -> Sensors page
+  styles.css   -> Shared styling for both pages
+
+COLOURS
+-------
+  Dark blue   (top bar)       #1f2d3d
+  Light grey  (page bg)       #f2f5f9
+  White       (cards)         #ffffff
+  Green       (online tag)    #16845b
+  Orange      (warning tag)   #a96b08
+
+
+================================================================
+SCREEN 1: DASHBOARD  (index.html)
+================================================================
+
+---------------------------------------------------------------
+TOP BAR  (full width, dark blue)
+---------------------------------------------------------------
+  LEFT                                RIGHT
+  SMART MINE OPERATIONS               SYSTEM STATUS: ONLINE
+  Mine Monitoring & Safety Dashboard  Admin Profile
+
+  -> Always visible on every page.
+  -> "ONLINE" is shown in green text.
+  -> "Admin Profile" is plain text (placeholder for login later).
+
+---------------------------------------------------------------
+LAYOUT  (two columns below the top bar)
+---------------------------------------------------------------
+  +--------------+--------------------------------------------+
+  |              |                                            |
+  |   SIDEBAR    |              MAIN CONTENT                  |
+  |  (200px)     |                                            |
+  |              |                                            |
+  +--------------+--------------------------------------------+
+
+---------------------------------------------------------------
+LEFT SIDEBAR  (white, fixed width)
+---------------------------------------------------------------
+  OVERVIEW               <- small grey label
+
+  Dashboard              <- ACTIVE (light blue background)
+  Equipment
+  Sensors
+  Environment
+  Alerts
+  Personnel
+
+  -> Clicking "Sensors" opens sensors.html.
+  -> All other links currently return to index.html
+     (placeholders for future pages).
+
+---------------------------------------------------------------
+MAIN CONTENT - ROW 1: TITLE
+---------------------------------------------------------------
+  OPERATIONS OVERVIEW
+  Welcome to the Mine Monitoring Centre
+
+---------------------------------------------------------------
+MAIN CONTENT - ROW 2: SUMMARY CARDS (3 cards side by side)
+---------------------------------------------------------------
+  +--------------+  +--------------+  +--------------+
+  | Equipment    |  | Sensors      |  | Warnings     |
+  |              |  |              |  |              |
+  |     12       |  |     08       |  |     02       |
+  +--------------+  +--------------+  +--------------+
+
+  -> Big number = the count.
+  -> Small grey label above the number.
+  -> Example/demo values only.
+
+---------------------------------------------------------------
+MAIN CONTENT - ROW 3: MAP + LIVE SENSOR DATA
+---------------------------------------------------------------
+  +------------------------------+  +--------------------+
+  | MINE SITE MAP                |  | LIVE SENSOR DATA   |
+  |                              |  |                    |
+  |  +------------------------+  |  |  Temperature       |
+  |  |                        |  |  |  Air Quality       |
+  |  |  Monitoring zones      |  |  |  Gas Levels        |
+  |  |  and equipment         |  |  |  Vibration         |
+  |  |  (dashed placeholder)  |  |  |                    |
+  |  +------------------------+  |  |                    |
+  +------------------------------+  +--------------------+
+
+  -> Map is a dashed grey placeholder box for now.
+  -> Sensor list is plain text (no live numbers yet).
+
+---------------------------------------------------------------
+MAIN CONTENT - ROW 4: EQUIPMENT STATUS + RECENT ALERTS
+---------------------------------------------------------------
+  +------------------------------+  +--------------------+
+  | EQUIPMENT STATUS             |  | RECENT ALERTS      |
+  |                              |  |                    |
+  | Excavator        [Online]    |  | High Temperature   |
+  | Drill            [Online]    |  | Sensor Offline     |
+  | Conveyor         [Warning]   |  | High Gas Reading   |
+  +------------------------------+  +--------------------+
+
+  -> [Online]  = green tag
+  -> [Warning] = orange tag
+  -> Alerts are plain text lines for now.
+
+
+================================================================
+SCREEN 2: SENSORS  (sensors.html)
+================================================================
+
+---------------------------------------------------------------
+TOP BAR
+---------------------------------------------------------------
+  Same as Dashboard (identical dark blue bar).
+
+---------------------------------------------------------------
+LEFT SIDEBAR
+---------------------------------------------------------------
+  OVERVIEW
+
+  Dashboard              <- links back to index.html
+  Equipment
+  Sensors                <- ACTIVE (light blue background)
+  Environment
+  Alerts
+  Personnel
+
+---------------------------------------------------------------
+MAIN CONTENT - TITLE
+---------------------------------------------------------------
+  SENSORS
+  Review the sensors installed at the mine site
+
+---------------------------------------------------------------
+MAIN CONTENT - SENSOR TABLE
+---------------------------------------------------------------
+  +------------------------------------------------------------+
+  | SENSOR LIST                                                |
+  |                                                            |
+  | Sensor ID | Type         | Location | Status              |
+  |-----------|--------------|----------|---------------------|
+  | TMP-001   | Temperature  | Zone A   | [Online]            |
+  | AIR-002   | Air Quality  | Zone B   | [Online]            |
+  | GAS-003   | Gas Levels   | Zone B   | [Warning]           |
+  | VIB-004   | Vibration    | Zone C   | [Online]            |
+  +------------------------------------------------------------+
+
+  -> [Online]  = green tag
+  -> [Warning] = orange tag
+  -> Values are examples for layout testing only.
+
+
+================================================================
+NAVIGATION FLOW
+================================================================
+
+   +----------------------+         +----------------------+
+   |   DASHBOARD          |  click  |   SENSORS            |
+   |   (index.html)       | ------> |   (sensors.html)     |
+   |                      | <------ |                      |
+   +----------------------+  click  +----------------------+
+                          "Dashboard"
+
+   Sidebar links "Equipment", "Environment", "Alerts",
+   "Personnel" currently return to index.html.
+   These are placeholders for future pages.
+
+
+================================================================
+MOBILE / NARROW SCREEN BEHAVIOUR
+================================================================
+
+  - Below 700px wide, the sidebar moves ABOVE the main content
+    (stacked layout instead of side-by-side).
+  - Sidebar links display inline (in a row) instead of
+    one per line.
+  - Cards in each row stack vertically.
+  - Top bar wraps to two lines if needed.
+
+  Layout change:
+
+    DESKTOP                      MOBILE
+    +--------+----------+        +-------------------+
+    |        |          |        |     TOP BAR       |
+    | SIDE   |   MAIN   |        +-------------------+
+    | BAR    |          |        |     SIDEBAR       |
+    |        |          |        +-------------------+
+    +--------+----------+        |     MAIN          |
+                                 +-------------------+
+
+================================================================
+PLACEHOLDER / DEMO CONTENT NOTES
+================================================================
+
+  - All numbers, sensor IDs and alert messages are EXAMPLES.
+  - Nothing is connected to real hardware yet.
+  - The map is an empty dashed box.
+  - "Admin Profile" is text only - no login system yet.
+  - "SYSTEM STATUS: ONLINE" is static text, not live status.
+
+================================================================
+NEXT STEPS (future versions)
+================================================================
+
+  1. Add real Equipment, Environment, Alerts, Personnel pages
+     using sensors.html as a template.
+  2. Replace map placeholder with a real site map image.
+  3. Feed live sensor values into the "LIVE SENSOR DATA" card.
+  4. Add a login / admin area for the "Admin Profile" link.
+  5. Connect to real hardware data sources.
+
+================================================================
+END OF STORYBOARD
+================================================================
