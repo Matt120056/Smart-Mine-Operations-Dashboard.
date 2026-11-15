@@ -76,22 +76,34 @@ YOUR ANSWER HERE
 
 | Alternative | What it does well | Where it falls short for my persona |
 |---|---|---|
-| | | |
-| | | |
+| Existing mine monitoring or control systems | Can collect and display operational information from connected equipment and sensors. | may be specialized or distributed across different systems. The dashboard should not assume it can replace these systems |
+| Paper notes, shift logs, or verbal handovers | Familiar and useful for recording observations and passing information between shifts. | Information can be difficult to search, compare, or summarize, especially when records are spread across multiple documents. like they usually are in mining  |
 
 ### 1.5 Success criteria
 > Three statements you could actually check.
 
-1. YOUR ANSWER HERE
-2. YOUR ANSWER HERE
-3. YOUR ANSWER HERE
+1. A first-time user can identify the purpose of the Home page and find the Sensors page within 10 seconds
+2. The Sensors page displays at least three clearly labelled sample sensor categories or readings
+3. The Home and Sensors pages remain usable at a 375-pixel mobile viewport and a 1280-pixel desktop viewport without horizontal page scrolling
 
 ### 1.6 Abstract (150 to 250 words)
 > Three short parts: the problem and who has it, what you are building, and why it matters.
 
-YOUR ANSWER HERE
+# Smart Mine Operations Dashboard – Project Abstract - Matt Pheaton | A00305272
 
-**Word count:** YOUR ANSWER HERE
+The Smart Mine Operations Dashboard is a web-based monitoring platform designed to help mine operators, supervisors, and maintenance personnel view important mining and environmental information in one centralized location.
+
+Mining environments present several operational and safety challenges. Equipment conditions, environmental changes, and potential hazards must be monitored regularly. When information is spread across multiple devices or checked manually, important changes may go unnoticed, potentially resulting in equipment failures, unsafe working conditions, and operational delays.
+
+The proposed system aims to address these challenges by connecting monitoring hardware, sensors, and a controller to a web-based dashboard. The platform will display sensor readings, equipment conditions, device connectivity, and important operational information. Monitoring categories may include temperature, vibration, air quality, gas levels, and equipment activity.
+
+The dashboard will also feature a notification and alert system that identifies readings exceeding predefined safety thresholds. Alerts will help operators recognize potential hazards and respond more efficiently. The interface will be organized into dedicated sections for the main dashboard, equipment monitoring, environmental sensors, safety alerts, and personnel information.
+
+The intended users include mine operators, supervisors, and maintenance teams who require a clear overview of underground operations. The project demonstrates how Internet of Things (IoT) hardware, sensor technology, data management, and web development can be integrated into a centralized monitoring solution.
+
+The overall objective is to develop a functional prototype that demonstrates how connected monitoring technologies can support improved operational awareness, equipment monitoring, and workplace safety in mining environments.
+
+**Word count:** 249 haha just under
 
 ---
 
@@ -102,60 +114,60 @@ YOUR ANSWER HERE
 
 | Feature | Group (Must, Should, Could, Won't) | Because |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+| Home page with a clear operational overview | must | gives users a good starting point |
+| Sensors page with organized sensor cards | Must | sensor info in a consistent layout |
+| Navigation between Home and Sensors | must | quick nav between pages for ease |
+| Clear labels showing sample | must | so I can see what I have setup as demo or actual physical sensors |
+| Equipment status page | Should | Adds useful operational context |
+| Environment page with air-quality and moisture sections | Should | Organizes important environmental categories for a later development stage |
+| Safety alerts page | Should | Gives users a dedicated place to review threshold warnings in a later stage. |
+| Employee/location monitoring page | SHould | insure the safety of the employees underground or in hazardis areas |
+| Automated notifications to users | Could | Could improve awareness later, but requires back-end logic and decisions about alert delivery. |
+| Automated control of mine equipment | Wont | out of scope of the applications itself |
 
 ### 2.2 Main user flow
 > Five to eight numbered steps, each naming the screen where it happens.
 
-1. YOUR ANSWER HERE
-2. YOUR ANSWER HERE
-3. YOUR ANSWER HERE
-4. YOUR ANSWER HERE
-5. YOUR ANSWER HERE
+1. Home: The user opens the dashboard and sees a brief overview of the monitoring areas.
+2. Sensors: The user selects Sensors from the navigation.
+3. Sensors: The user reviews the available sensor categories, such as air quality and moisture/water-removal monitoring.
+4. Sensors: The user selects or reviews a sensor card to understand its displayed value, unit, and status.
+5. Home: The user returns to the overview to continue reviewing the dashboard.
 
 ### 2.3 Data sketch
 > Two to four things your app remembers, with three to five details each. No SQL. Then one sentence for each relationship.
 
 | Thing | Details it remembers |
 |---|---|
-| | |
-| | |
+| Sensor | identifier, sensor category, location/area, measurement unit, connection status |
+| Alert | Alert identifier, related sensor or equipment, alert message, severity, date and time, acknowledgement status |
 
-**Relationships:** YOUR ANSWER HERE
+**Relationships:** A sensor reading can be associated with an alert when a configured threshold is exceeded. Equipment can be associated with a work area and may have related monitoring sensors or alerts. I will define the relationships in the data base in the next milestone.
 
 ### 2.4 Page list
 > Every page the finished project might have (at least five). Mark the two you build in this milestone.
 
 | Page | Purpose | Built in Milestone 1? |
 |---|---|---|
-| Home | | Yes |
-| | | Yes |
-| | | No |
-| | | No |
-| | | No |
+| Home | Gives users a clear overview and links to the main monitoring areas. | Yes |
+| Sensors | Displays organized sensor categories, sample readings, units, timestamps, and status. | Yes |
+| Equipment | Shows equipment details and operating status. | No |
+| Environment | Organizes air-quality, moisture, and water-removal information. | No |
+|Personnel / Location | Potentially displays approved personnel or location information, subject to privacy and project-scope review. | No |
 
 ### 2.5 GitHub issues
 > Paste the links to your five issues.
 
-1. Build the home page and the core page (HTML): https://github.com/...
-2. Style the site: palette, responsive layout and components: https://github.com/...
-3. Feature (Must): https://github.com/...
-4. Feature (Must): https://github.com/...
-5. Feature (Must): https://github.com/...
+1. Build the home page and the core page (HTML): https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./issues/1
+2. Style the site: palette, responsive layout and components: https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./issues/2
+3. Feature (Must): https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./issues/3
+4. Feature (Must): https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./issues/4
+5. Feature (Must): https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./issues/5
 
 ### 2.6 Abstract check
 > Re-read your abstract from 1.6 against your Must-haves. Edit it if it no longer matches (keep it 150 to 250 words), then say what you changed.
 
-- **What I changed (or why nothing):** YOUR ANSWER HERE
+- **What I changed (or why nothing):** I just re made the absract recently so I have nothing new as of yet to add or delete.
 
 ---
 

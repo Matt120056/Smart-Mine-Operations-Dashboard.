@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensors · Smart Mine Operations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div>
+      <h1>SMART MINE OPERATIONS</h1>
+      <p>Mine Monitoring &amp; Safety Dashboard</p>
+    </div>
+    <div class="topbar-right">
+      <span class="online">SYSTEM STATUS: ONLINE</span>
+      <span>Admin Profile</span>
+    </div>
+  </header>
+
+  <!-- PAGE LAYOUT: SIDEBAR + MAIN -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2>OVERVIEW</h2>
+      <a href="index.html">Dashboard</a>
+      <a href="index.html">Equipment</a>
+      <a href="sensors.html" class="active">Sensors</a>
+      <a href="index.html">Environment</a>
+      <a href="index.html">Alerts</a>
+      <a href="index.html">Personnel</a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+      <h2>SENSORS</h2>
+      <p class="subtitle">Review the sensors installed at the mine site</p>
+
+      <div class="card">
+        <h3>SENSOR LIST</h3>
+        <table>
+          <tr>
+            <th>Sensor ID</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>TMP-001</td>
+            <td>Temperature</td>
+            <td>Zone A</td>
+            <td><span class="tag green">Online</span></td>
+          </tr>
+          <tr>
+            <td>AIR-002</td>
+            <td>Air Quality</td>
+            <td>Zone B</td>
+            <td><span class="tag green">Online</span></td>
+          </tr>
+          <tr>
+            <td>GAS-003</td>
+            <td>Gas Levels</td>
+            <td>Zone B</td>
+            <td><span class="tag orange">Warning</span></td>
+          </tr>
+          <tr>
+            <td>VIB-004</td>
+            <td>Vibration</td>
+            <td>Zone C</td>
+            <td><span class="tag green">Online</span></td>
+          </tr>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
