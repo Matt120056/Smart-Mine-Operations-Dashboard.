@@ -1,7 +1,4 @@
 # Smart-Mine-Operations-Dashboard.
-This project is for our studio project in Web Dev.
+This project is for my studio project in Web Dev.
+Matt -> Storyteller, Designer, Framer
 
-Contributors.
-Rishabh -> Framer →  make abstract.txt.
-Matt -> Storyteller -> make storyboard.txt.
-Carter -> Designer → make wireframe.txt.
