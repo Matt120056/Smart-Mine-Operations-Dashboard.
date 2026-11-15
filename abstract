@@ -1,9 +1,13 @@
-Smart Mine Operations Dashboard: Our project is a mock mine-monitoring system that helps mine operators view key operational information in a single web dashboard. 
+# Smart Mine Operations Dashboard – Project Abstract - Matt Pheaton | A00305272
 
-In a mine, equipment conditions, environmental readings, and safety concerns need to be noticed quickly. When this information is distributed across multiple devices or checked manually, operators may miss changes that could lead to equipment failure, unsafe conditions, or delays. 
+The Smart Mine Operations Dashboard is a web-based monitoring platform designed to help mine operators, supervisors, and maintenance personnel view important mining and environmental information in one centralized location.
 
-The system will connect hardware such as sensors and a controller to a website. The dashboard will display live sensor readings, device status, and mine-operation data. It may show information such as temperature, vibration, equipment activity, air quality, or gas readings, and whether a device is online or offline. 
+Mining environments present several operational and safety challenges. Equipment conditions, environmental changes, and potential hazards must be monitored regularly. When information is spread across multiple devices or checked manually, important changes may go unnoticed, potentially resulting in equipment failures, unsafe working conditions, and operational delays.
 
-When a sensor reading crosses a safe threshold, the system sends an alert so the operator can act right away. It's built for mine operators, supervisors, and maintenance teams. The project shows how linking hardware, collecting data, and using a web app can help people make safer, better-informed decisions underground.
+The proposed system aims to address these challenges by connecting monitoring hardware, sensors, and a controller to a web-based dashboard. The platform will display sensor readings, equipment conditions, device connectivity, and important operational information. Monitoring categories may include temperature, vibration, air quality, gas levels, and equipment activity.
 
-It also gives our team a practical way to integrate IoT hardware, programming, data, and web development into a single project.
+The dashboard will also feature a notification and alert system that identifies readings exceeding predefined safety thresholds. Alerts will help operators recognize potential hazards and respond more efficiently. The interface will be organized into dedicated sections for the main dashboard, equipment monitoring, environmental sensors, safety alerts, and personnel information.
+
+The intended users include mine operators, supervisors, and maintenance teams who require a clear overview of underground operations. The project demonstrates how Internet of Things (IoT) hardware, sensor technology, data management, and web development can be integrated into a centralized monitoring solution.
+
+The overall objective is to develop a functional prototype that demonstrates how connected monitoring technologies can support improved operational awareness, equipment monitoring, and workplace safety in mining environments.
