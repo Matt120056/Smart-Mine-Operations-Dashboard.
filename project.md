@@ -35,17 +35,18 @@
 ### 1.1 Problem statement
 > Describe a problem, not a solution. Do not mention an app, a website or a feature. Use: "[Who] struggles to [do what] because [obstacle], which leads to [consequence]." Then expand to three to five sentences.
 
-YOUR ANSWER HERE
+The problem That I see is the massive amount of data that is being collected and the man power that is always at risk
+on a mine site. Even though systems are safer today then they were 20 years ago I still want to work to find a better more condensed way to filter and organize the data. 
 
 ### 1.2 Evidence from real people
 > Two short conversations. Record a role (not a full name), two exact quotes each, and one surprise. Ask permission before quoting. Do not invent quotes.
 
 **Conversation A**
 
-- **Who (role only):** YOUR ANSWER HERE
-- **Quote 1:** "YOUR ANSWER HERE"
-- **Quote 2:** "YOUR ANSWER HERE"
-- **What surprised me:** YOUR ANSWER HERE
+- **Who (role only):** Mining engineering student
+- **Quote 1:** "I want something not complex but that shows me only what I need to see "
+- **Quote 2:** "Being prepared is the best way to feel comfortable"
+- **What surprised me:** They want something useful but not flashy, simple but effective
 
 **Conversation B**
 
@@ -54,6 +55,8 @@ YOUR ANSWER HERE
 - **Quote 2:** "YOUR ANSWER HERE"
 - **What surprised me:** YOUR ANSWER HERE
 
+I never got to a seccond conversation and I dont want to make one up.
+
 **Revised problem statement** (re-read 1.1 after your conversations, then write the revised version, or write "no change" and say why):
 
 YOUR ANSWER HERE
@@ -61,12 +64,12 @@ YOUR ANSWER HERE
 ### 1.3 Persona
 > A made-up person based on what you heard. Their frustrations should echo your quotes.
 
-- **Name, age or life stage, role:** YOUR ANSWER HERE
-- **Context (when and where the problem happens):** YOUR ANSWER HERE
-- **Three goals:** 1) YOUR ANSWER HERE 2) YOUR ANSWER HERE 3) YOUR ANSWER HERE
-- **Three frustrations:** 1) YOUR ANSWER HERE 2) YOUR ANSWER HERE 3) YOUR ANSWER HERE
-- **Technology comfort and devices:** YOUR ANSWER HERE
-- **A quote that sums them up:** "YOUR ANSWER HERE"
+- **Name, age or life stage, role:** Underground Miner
+- **Context (when and where the problem happens):** Knowledge of everything going on
+- **Three goals:** 1) Make something good 2) simple to use 3) Easy to edit and maintain 
+- **Three frustrations:** 1) getting all info needed 2) learning the mining systems 3) making a mini mine on my desk
+- **Technology comfort and devices:** Sensors, My mini pcs and my endless hardware I have aquired
+- **A quote that sums them up:** "Pretty cool and intense at times"
 
 ### 1.4 What already exists
 > Two or three alternatives, including "doing it by hand" if that is what people really do.
