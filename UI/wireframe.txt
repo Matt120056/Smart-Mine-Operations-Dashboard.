@@ -1,10 +1,10 @@
 ┌──────────────────────────────────────────────────────────────┐
 │ SMART MINE OPERATIONS              SYSTEM STATUS: ONLINE     │
-│ Mine Monitoring & Safety Dashboard            Admin Profile   │
+│ Mine Monitoring & Safety Dashboard            Admin Profile  │
 ├──────────────┬───────────────────────────────────────────────┤
 │              │                                               │
 │  OVERVIEW    │  OPERATIONS OVERVIEW                          │
-│              │  Welcome to the Mine Monitoring Centre       │
+│              │  Welcome to the Mine Monitoring Centre        │
 │  Dashboard   │                                               │
 │  Equipment   │  ┌──────────┐ ┌──────────┐ ┌──────────┐       │
 │  Sensors     │  │ Equipment│ │ Sensors  │ │ Warnings │       │
@@ -24,7 +24,7 @@
 │              │  │ EQUIPMENT STATUS   │ │ RECENT ALERTS     │ │
 │              │  │                    │ │                   │ │
 │              │  │ Excavator  Online  │ │ High Temperature  │ │
-│              │  │ Drill      Online  │ │ Sensor Offline     │ │
-│              │  │ Conveyor   Warning │ │ High Gas Reading   │ │
+│              │  │ Drill      Online  │ │ Sensor Offline    │ │
+│              │  │ Conveyor   Warning │ │ High Gas Reading  │ │
 │              │  └────────────────────┘ └───────────────────┘ │
 └──────────────┴───────────────────────────────────────────────┘
