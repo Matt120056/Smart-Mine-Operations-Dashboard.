@@ -50,16 +50,16 @@ on a mine site. Even though systems are safer today then they were 20 years ago 
 
 **Conversation B**
 
-- **Who (role only):** YOUR ANSWER HERE
-- **Quote 1:** "YOUR ANSWER HERE"
-- **Quote 2:** "YOUR ANSWER HERE"
-- **What surprised me:** YOUR ANSWER HERE
+- **Who (role only):** no second conersation
+- **Quote 1:** not recorded
+- **Quote 2:**  not recorded
+- **What surprised me:** Never had a second conversation
 
-I never got to a seccond conversation and I dont want to make one up.
+
 
 **Revised problem statement** (re-read 1.1 after your conversations, then write the revised version, or write "no change" and say why):
 
-YOUR ANSWER HERE
+No change. Conversation A confirmed the direction of 1.1 rather than overturning it: the core issue is that too much data is scattered and hard to filter down to what matters. I would only revise this after a second conversation.
 
 ### 1.3 Persona
 > A made-up person based on what you heard. Their frustrations should echo your quotes.
@@ -177,24 +177,25 @@ The overall objective is to develop a functional prototype that demonstrates how
 
 | Panel | Scene (where, who) | What happens | What they think or feel | Screen shown |
 |---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-
-These are in my storyboard.txt via this link: https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./blob/main/storyboard.txt
+| 1 | Underground mine, start of shift. The Underground Miner arrives at the site with no clear picture of conditions that day. | Data is spread across paper logs, separate systems and verbal handovers. | "I don't know what I'm walking into." | None — the problem |
+| 2 | Control room, the Miner opens a laptop. |They open the Smart Mine Operations Dashboard and land on the Home page. | "At least everything is in one place now." | Home |
+| 3 |Same desk, a minute later. | They scan the summary cards and the live sensor data, then spot a warning on the Conveyor. | "There it is — I can see the issue straight away." | Home |
+| 4 | Back underground, later in the shift. | The team has been briefed and the conveyor issue is being handled before it becomes a failure. | "That was quick and it felt calm." | None — problem solved |
 
 ---
 
 ## Part 4: Site Map and Wireframes
 
 ### 4.1 Site map
-> A Mermaid diagram (GitHub draws it). Replace the example.
 
 ```mermaid
 flowchart LR
-    Home --> PageB
-    Home --> PageC
+    Home --> Sensors
+    Home --> Equipment
+    Home --> Environment
+    Home --> Alerts
+    Home --> Personnel
+    Sensors --> Home
 ```
 
 ### 4.2 Wireframes
@@ -335,19 +336,18 @@ flowchart LR
 
 ### 7.5 Screenshots
 > Embed them: `screenshots/home-375.png`, `screenshots/home-1280.png`, `screenshots/core-375.png`, `screenshots/core-1280.png`.
-they are in my github screenshots folder
-https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./tree/main/dashboard/screenshots
+
 
 ---
 
 ## Part 8: Git and GitHub
 
-**Repository:**   https://github.com/Matt120056/Smart-Mine-Operations-Dashboard.
+**Repository:**   https://github.com/Matt120056/Smart-Mine-Operations-Dashboard
 **Issue #1 (closed):** https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./issues/1
 **Issue #2 (closed):** https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./issues/2
-**Merged Pull Request for HTML:** https://github.com/...
-**Merged Pull Request for CSS:** https://github.com/...
-**Release v0.1.0:**  https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./releases/tag/V1.0.0
+**Merged Pull Request for HTML:** https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./pull/6
+**Merged Pull Request for CSS:** https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./pull/7
+**Release v0.1.0:**  https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./releases/tag/v0.1.0
 
 ```text
 (git log --oneline | wc -l)
