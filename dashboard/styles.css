@@ -1,20 +1,39 @@
-
-* {
+:root {
+    --bg: #f2f5f9;
+    --surface: #ffffff;
+    --text: #1f2d3d;
+    --muted: #6b7b8c;
+    --primary: #1769aa;
+    --topbar: #1f2d3d;
+    --topbar-text: #c8d4e0;
+    --online: #7be0a4;
+    --border: #dde5ee;
+    --border-light: #eef3f9;
+    --link: #3a4b5e;
+    --label: #7a8ba0;
+    --heading: #4a5c70;
+    --active-bg: #dceafc;
+    --map-bg: #eef3f9;
+    --map-border: #c4d1e0;
+    --green-bg: #d9f5e6;
+    --green-text: #16845b;
+    --orange-bg: #fff0d4;
+    --orange-text: #a96b08;
+  }
+  
+  * {
     box-sizing: border-box;
   }
   
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f2f5f9;
-    color: #1f2d3d;
+    background: var(--bg);
+    color: var(--text);
   }
   
-  /* ----------------------------------------
-     TOP BAR
-  ---------------------------------------- */
   .topbar {
-    background: #1f2d3d;
+    background: var(--topbar);
     color: white;
     padding: 15px 25px;
     display: flex;
@@ -32,7 +51,7 @@
   .topbar p {
     margin: 4px 0 0;
     font-size: 13px;
-    color: #c8d4e0;
+    color: var(--topbar-text);
   }
   
   .topbar-right {
@@ -43,31 +62,25 @@
   }
   
   .online {
-    color: #7be0a4;
+    color: var(--online);
     font-weight: bold;
   }
   
-  /* ----------------------------------------
-     PAGE LAYOUT (SIDEBAR + MAIN)
-  ---------------------------------------- */
   .layout {
     display: flex;
     min-height: calc(100vh - 70px);
   }
   
-  /* ----------------------------------------
-     SIDEBAR
-  ---------------------------------------- */
   .sidebar {
     width: 200px;
-    background: white;
-    border-right: 1px solid #dde5ee;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
     padding: 20px 10px;
   }
   
   .sidebar h2 {
     font-size: 12px;
-    color: #7a8ba0;
+    color: var(--label);
     letter-spacing: 1px;
     margin: 0 0 15px 10px;
   }
@@ -76,25 +89,22 @@
     display: block;
     padding: 10px 12px;
     margin-bottom: 4px;
-    color: #3a4b5e;
+    color: var(--link);
     text-decoration: none;
     border-radius: 6px;
     font-size: 14px;
   }
   
   .sidebar a:hover {
-    background: #eef3f9;
+    background: var(--border-light);
   }
   
   .sidebar a.active {
-    background: #dceafc;
-    color: #1769aa;
+    background: var(--active-bg);
+    color: var(--primary);
     font-weight: bold;
   }
   
-  /* ----------------------------------------
-     MAIN CONTENT
-  ---------------------------------------- */
   .main {
     flex: 1;
     padding: 25px;
@@ -107,13 +117,10 @@
   
   .subtitle {
     margin: 0 0 20px;
-    color: #6b7b8c;
+    color: var(--muted);
     font-size: 14px;
   }
   
-  /* ----------------------------------------
-     ROWS AND CARDS
-  ---------------------------------------- */
   .row {
     display: flex;
     gap: 20px;
@@ -122,8 +129,8 @@
   }
   
   .card {
-    background: white;
-    border: 1px solid #dde5ee;
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 20px;
     flex: 1;
@@ -134,36 +141,31 @@
     margin: 0 0 12px;
     font-size: 14px;
     letter-spacing: 1px;
-    color: #4a5c70;
+    color: var(--heading);
   }
   
-  /* Summary cards (Equipment, Sensors, Warnings) */
   .summary p {
     margin: 0;
-    color: #6b7b8c;
+    color: var(--muted);
     font-size: 13px;
   }
   
   .summary h3 {
     font-size: 30px;
     margin: 8px 0 0;
-    color: #1f2d3d;
+    color: var(--text);
   }
   
-  /* Map placeholder */
   .map-box {
-    background: #eef3f9;
-    border: 2px dashed #c4d1e0;
+    background: var(--map-bg);
+    border: 2px dashed var(--map-border);
     border-radius: 6px;
     padding: 40px 15px;
     text-align: center;
-    color: #7a8ba0;
+    color: var(--label);
     font-size: 14px;
   }
   
-  /* ----------------------------------------
-     SIMPLE LISTS (used in cards)
-  ---------------------------------------- */
   .simple-list {
     list-style: none;
     margin: 0;
@@ -172,7 +174,7 @@
   
   .simple-list li {
     padding: 10px 0;
-    border-bottom: 1px solid #eef3f9;
+    border-bottom: 1px solid var(--border-light);
     font-size: 14px;
     display: flex;
     justify-content: space-between;
@@ -183,9 +185,6 @@
     border-bottom: none;
   }
   
-  /* ----------------------------------------
-     STATUS TAGS (Online / Warning)
-  ---------------------------------------- */
   .tag {
     font-size: 11px;
     font-weight: bold;
@@ -194,18 +193,15 @@
   }
   
   .tag.green {
-    background: #d9f5e6;
-    color: #16845b;
+    background: var(--green-bg);
+    color: var(--green-text);
   }
   
   .tag.orange {
-    background: #fff0d4;
-    color: #a96b08;
+    background: var(--orange-bg);
+    color: var(--orange-text);
   }
   
-  /* ----------------------------------------
-     TABLE (used on Sensors page)
-  ---------------------------------------- */
   table {
     width: 100%;
     border-collapse: collapse;
@@ -214,24 +210,21 @@
   th {
     text-align: left;
     font-size: 12px;
-    color: #7a8ba0;
+    color: var(--label);
     padding: 8px 5px;
-    border-bottom: 1px solid #dde5ee;
+    border-bottom: 1px solid var(--border);
   }
   
   td {
     font-size: 14px;
     padding: 12px 5px;
-    border-bottom: 1px solid #eef3f9;
+    border-bottom: 1px solid var(--border-light);
   }
   
   tr:last-child td {
     border-bottom: none;
   }
   
-  /* ----------------------------------------
-     MOBILE FRIENDLY
-  ---------------------------------------- */
   @media (max-width: 700px) {
     .layout {
       flex-direction: column;
@@ -240,7 +233,7 @@
     .sidebar {
       width: 100%;
       border-right: none;
-      border-bottom: 1px solid #dde5ee;
+      border-bottom: 1px solid var(--border);
     }
   
     .sidebar a {

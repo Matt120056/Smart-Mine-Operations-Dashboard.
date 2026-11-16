@@ -286,25 +286,25 @@ flowchart LR
 
 | Wireframe region | Element in my HTML | File |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Top bar | <header class="topbar"> | index.html, sensors.html |
+| Sidebar | <aside class="sidebar"> containing <nav> and <a> links | index.html, sensors.html |
+| Main content | <main class="main"> | index.html, sensors.html |
 
 ### 6.2 Checks
-- [ ] Both pages have exactly one `h1` and headings in order
-- [ ] Both pages have the viewport meta tag and a unique `<title>`
-- [ ] The `nav` links to both pages and marks the current one with `class="active"`
-- [ ] There is a list of repeated items, each an `article`
-- [ ] The form has a `label`, `id` and `name` for every control
-- [ ] Informative images have real alt text and decorative ones use `alt=""`
-- [ ] No lorem ipsum anywhere
-- [ ] I used at least one absolute, one relative and one same-page link
+- [x] Both pages have exactly one `h1` and headings in order
+- [x] Both pages have the viewport meta tag and a unique `<title>`
+- [x] The `nav` links to both pages and marks the current one with `class="active"`
+- [x] There is a list of repeated items, each an `article`
+- [x] The form has a `label`, `id` and `name` for every control
+- [x] Informative images have real alt text and decorative ones use `alt=""`
+- [x] No lorem ipsum anywhere
+- [x] I used at least one absolute, one relative and one same-page link
 
 ### 6.3 Validator results
-- **Home page:** screenshot `screenshots/home-validation.png`
-- **Core page:** screenshot `screenshots/core-validation.png`
+- **Home page:** screenshot https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./blob/main/dashboard/screenshots/Validation-indexHTML.png
+- **Core page:** screenshot https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./blob/main/dashboard/screenshots/Validation-SensorsHTML.png
 
-**Errors I met and fixed (at least one):** YOUR ANSWER HERE
+**Errors I met and fixed (at least one):** "The <time> element inside an <li> was missing a datetime attribute — I removed it because these are placeholders, not real timestamps.
 
 ---
 
@@ -315,51 +315,85 @@ flowchart LR
 
 | Page | What matches | What changed, and why |
 |---|---|---|
-| Home | | |
-| Core page | | |
+| Home | Top bar, sidebar, three summary cards, map + sensor list, equipment + alerts | Sidebar moved above main content under 700px so it fits phone width |
+| Core page | Top bar, sidebar, sensor table with status tags | Table columns compress at narrow widths, so font size reduced slightly |
 
 ### 7.2 Checks
-- [ ] Every colour, font, spacing and radius comes from `:root`
-- [ ] No `!important`, no inline `style`
-- [ ] Mobile first, with at least two `min-width` media queries
-- [ ] Flexbox is used for the header and nav, and Grid for the cards
-- [ ] `.btn` and `.card` (or my own reusable classes) are used everywhere
-- [ ] There is no sideways page scroll at 375px
-- [ ] The page still looks decent with Google Fonts blocked
+- [x] Every colour, font, spacing and radius comes from `:root`
+- [x] No `!important`, no inline `style`
+- [x] Mobile first, with at least two `min-width` media queries
+- [x] Flexbox is used for the header and nav, and Grid for the cards
+- [x] `.btn` and `.card` (or my own reusable classes) are used everywhere
+- [x] There is no sideways page scroll at 375px
+- [x] The page still looks decent with Google Fonts blocked
 
 ### 7.3 Contrast re-check
-**Pairs I re-tested on the built page, and any I had to change:** YOUR ANSWER HERE
+**Pairs I re-tested on the built page, and any I had to change:** The orange warning tag on white was 3.9:1, so I darkened the orange text from #c98a0a to #a96b08 to reach 4.5:1.
 
 ### 7.4 CSS validator
-**What the W3C CSS Validator said (and whether any warning matters):** YOUR ANSWER HERE
+**What the W3C CSS Validator said (and whether any warning matters):** No errors. Two warnings about -webkit- prefixes that are no longer needed
 
 ### 7.5 Screenshots
 > Embed them: `screenshots/home-375.png`, `screenshots/home-1280.png`, `screenshots/core-375.png`, `screenshots/core-1280.png`.
-
-YOUR ANSWER HERE
+they are in my github screenshots folder
+https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./tree/main/dashboard/screenshots
 
 ---
 
 ## Part 8: Git and GitHub
 
-**Repository:** https://github.com/...
-**Issue #1 (closed):** https://github.com/...
-**Issue #2 (closed):** https://github.com/...
+**Repository:**   https://github.com/Matt120056/Smart-Mine-Operations-Dashboard.
+**Issue #1 (closed):** https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./issues/1
+**Issue #2 (closed):** https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./issues/2
 **Merged Pull Request for HTML:** https://github.com/...
 **Merged Pull Request for CSS:** https://github.com/...
-**Release v0.1.0:** https://github.com/...
+**Release v0.1.0:**  https://github.com/Matt120056/Smart-Mine-Operations-Dashboard./releases/tag/V1.0.0
 
 ```text
 (git log --oneline | wc -l)
+
+(base) ➜  aa1-A00305272 git:(main) git log --oneline | wc -l
+      28
 ```
 ```text
 (git log --format='%ad' --date=short | sort -u | wc -l)
+
+(base) ➜  aa1-A00305272 git:(main) git log --format='%ad' --date=short | sort -u | wc -l
+       6
 ```
 ```text
 (git branch -a)
+
+* main
+  master
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/master
 ```
 ```text
 (git log --oneline --graph --all | head -20)
+
+(base) ➜  aa1-A00305272 git:(main) git log --oneline --graph --all | head -20
+* 619bf69 Added Validation Screenshots
+* d8e09a7 Added Markdown file
+* 252d59a Added Screenshots for page responsiveness
+* a239f8c Added html files
+* 05c3be2 Added updated storyboard
+* ae0e109  Please enter the commit message for your changes. Lines starting
+* e439d56 Added Wireframe + Abstract
+* 5fe3b59 Update dashboard
+* 9329424 Added Project markdown file
+* ca9d52c Added The project md file
+* 02da549 Added final statement
+* ad886a2 Paraphrased the story an changed the wording to make it ore acceptable
+* 3e42dfd Start Storyboard for Smart Mine Operations Dashboard
+* 1b3ca49 Start abstract for Smart Mine Operations Dashboard
+* 21598ba Revise project description and contributor details
+* bb8b28c Add files via upload
+* 0eed699 Moved wireframe files to wireframe folder for better file management.
+*   1400081 Added abstract and project documentation to my local repository
+|\  
+| * 415a0ae Delete storyboard.txt
 ```
 
 ---
@@ -368,26 +402,26 @@ YOUR ANSWER HERE
 
 > Two to four sentences each, about your own project.
 
-1. **From idea to problem:** YOUR ANSWER HERE
-2. **Evidence:** YOUR ANSWER HERE
-3. **The hardest decision:** YOUR ANSWER HERE
-4. **Design to code:** YOUR ANSWER HERE
-5. **Risks for the next milestones:** YOUR ANSWER HERE
-6. **Tools (including any AI tool, and what I did myself):** YOUR ANSWER HERE
+1. **From idea to problem:** I narrowed it to two things an operator actually needs in the first five seconds: which equipment is online, and which warnings are active. The summary cards and the equipment/alert rows come straight from that.
+2. **Evidence:** The wireframe and storyboard set the layout before any code was written, so the HTML structure mirrors real regions (top bar, sidebar, main, rows of cards) rather than being invented as I typed.
+3. **The hardest decision:** Choosing how simple to keep the prototype. I dont have JavaScript and I split the site into two static pages. 
+4. **Design to code:** The wireframe rows translated almost one-to-one into <div class="row"> containers, and the repeated blocks became .card. The status colours became a single reusable .tag class with a green or orange modifier.
+5. **Risks for the next milestones:**  Adding real data (live sensors, a real map) will need JavaScript and an API
+6. **Tools (including any AI tool, and what I did myself): I used claude to help draft the initial HTML/CSS (Note I made the inital design to give claude an idea of how to make it nicer and I learned a few new methods) and to split the files. I wrote the wireframe annotations, ran the contrast checks, and did the validator and cross-browser checks myself.
 
 ### Self-assessment
 
 | Area | Points | My score | One line of justification |
 |---|---|---|---|
-| Problem definition and evidence | 15 | | |
-| Scope and data | 10 | | |
-| Storyboard | 10 | | |
-| Wireframes and site map | 10 | | |
-| Design decisions | 5 | | |
-| HTML | 15 | | |
-| CSS and responsiveness | 15 | | |
-| Git and GitHub | 15 | | |
-| Reflection and completeness | 5 | | |
+| Problem definition and evidence | 15 | 15 | I had a pretty clear idea from the get go |
+| Scope and data | 10 | 9 | staying within my lane as of right now |
+| Storyboard | 10 | 10 | took e a while to write all that out |
+| Wireframes and site map | 10 | 8 | used carters base design but it ended up being totally different when i was done |
+| Design decisions | 5 | 5 | I used the colour checker to ake sure I was staying within a good palette |
+| HTML | 15 | 15 | used my own mixed with Claudes |
+| CSS and responsiveness | 15 | 15 | the css was me |
+| Git and GitHub | 15 | 15 | This is second nature at this point thanks to you :) |
+| Reflection and completeness | 5 | 4 | missed a few things im sure |
 
 ## Bonus (optional)
 
