@@ -49,22 +49,33 @@ v0.1.0
 
 | Question | My answer |
 |---|---|
-| Which pages show data, and which part of the page | |
-| Fields of each card, in wireframe order | |
-| Loading message (exact text) | |
-| Message if the file cannot be loaded (exact text) | |
-| Empty-list message (exact text) | |
-| How many cards the home page shows | |
+| Which pages show data, and which part of the page | The Sensors page (sensors.html) displays all sensor records loaded from data.json. The Home page (index.html) displays the first three sensor records as a preview. |
+| Fields of each card, in wireframe order | The fields appear in this order:
+
+Sensor ID
+
+Measurement Type
+
+Location
+
+Current Reading
+
+Maintenance Status |
+| Loading message (exact text) | Loading Sensor Information... |
+| Message if the file cannot be loaded (exact text) | Could not load sensor information. Please try again. |
+| Empty-list message (exact text) | Could not load sensor information (status [status code]). |
+| How many cards the home page shows | The Home page displays the first three sensor records. |
 
 ### 1.2 Find spec
 
 | Question | My answer |
 |---|---|
-| Fields the search looks at (at least two) | |
-| What must NOT matter (capitals, extra spaces) | |
-| Count line, in my own words (pattern with numbers) | |
-| No-match message (exact text) | |
-| When the filter runs (events, and once after the data arrives) | |
+| Fields the search looks at (at least two) | The search checks the Sensor ID and Measurement Type fields. |
+| What must NOT matter (capitals, extra spaces) | Capital letters and spaces before or after the search text must not affect the results. |
+| Count line, in my own words (pattern with numbers) | Showing X of Y sensors.
+X represents the number of matching sensors, and Y represents the total number of sensors. |
+| No-match message (exact text) | No sensors match your search. Try another sensor ID or measurement type. |
+| When the filter runs (events, and once after the data arrives) | The filter runs every time the visitor types a character into the search box. It also runs again immediately after the sensor data finishes loading. |
 
 ### 1.3 Add spec
 
@@ -72,14 +83,37 @@ v0.1.0
 
 | # | Field | Control type | Rule | Exact message |
 |---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
+| 1 | Sensor ID |  | | |
+| 2 | Measurement Type | | | |
+| 3 | Location | | | |
+| 4 | Current Reading | | | |
 
-- **What a good add does (list every change on the page):** YOUR ANSWER HERE
-- **The mark state (what the true/false field means, and the words for each state):** YOUR ANSWER HERE
-- **Tally line (pattern):** YOUR ANSWER HERE
+- **What a good add does (list every change on the page):** Clears the previous form error message.
+
+Creates a new sensor record with a unique ID.
+
+Adds the new sensor to the sensor records array.
+
+Displays the new sensor if it matches the current search.
+
+Clears the form fields.
+
+Moves the cursor back to the first form field.
+
+Updates the result count.
+
+Updates the maintenance tally.
+- **The mark state (what the true/false field means, and the words for each state):** The needsMaintenance field will be a true/false value.
+
+true = Requires Maintenance
+
+false = Operational
+
+Visitors can change this status using a button on each sensor card.
+
+- **Tally line (pattern):** X of Y sensors require maintenance.
+
+X represents the number of sensors requiring maintenance, and Y represents the total number of sensors.
 
 ### 1.4 Test plan
 
@@ -87,21 +121,21 @@ v0.1.0
 
 | ID | Feature | Do this | You should see |
 |---|---|---|---|
-| S1 | Show | | |
-| S2 | Show | | |
-| S3 | Show | | |
-| S4 | Show | | |
-| S5 | Show | | |
-| F1 | Find | | |
-| F2 | Find | | |
-| F3 | Find | | |
-| F4 | Find | | |
-| F5 | Find | | |
-| A1 | Add | | |
-| A2 | Add | | |
-| A3 | Add | | |
-| A4 | Add | | |
-| A5 | Add | | |
+| S1 | Show | open sensors page | All sensor records load from data.json. |
+| S2 | Show | open the home page | Only the first three sensor records appear. |
+| S3 | Show | open a page while the data is loading | Loading sensor information... appears. |
+| S4 | Show | Temporarily rename data.json and reload | A friendly error message appears. |
+| S5 | Show | Temporarily use an empty JSON array. | No sensor records are currently available. |
+| F1 | Find | Search for an existing sensor ID. | The matching sensor appears. |
+| F2 | Find | Search using capital letters. | Matching results still appear. |
+| F3 | Find | Search with spaces before and after a sensor ID. | Matching results still appear. |
+| F4 | Find | Search for a measurement type. | Sensors with that measurement type appear. |
+| F5 | Find | Search for random text that does not exist. | No-match message appears and count shows zero. |
+| A1 | Add | Submit the form with all fields empty. | The first validation error appears and no record is added. |
+| A2 | Add | Enter spaces in a required text field. | Validation rejects the field. |
+| A3 | Add | Enter an invalid reading. | An appropriate validation message appears. |
+| A4 | Add | Submit a valid sensor record. | A new sensor card appears and the form resets. |
+| A5 | Add | Mark a sensor as requiring maintenance, then mark it operational again. | The maintenance tally increases and decreases correctly. |
 
 ### 1.5 "Done when" checklists
 
@@ -109,9 +143,9 @@ v0.1.0
 
 | Issue | "Done when" (three checks, with test ids) |
 |---|---|
-| #3 | |
-| #4 | |
-| #5 | |
+| #3 | 	S1: All sensor records load from data.json. S2: Home page displays only the first three sensors. S4: A friendly error appears when data.json cannot be loaded. |
+| #4 | F1: Searching an existing sensor ID shows the matching sensor. F3: Searching with extra spaces still finds matching sensors. F5: Searching for something that does not exist displays the no-results message. |
+| #5 | A1: Empty form submissions are rejected with a validation message. A4: A valid sensor record is added and the form resets. A5: The maintenance status can be changed and the tally updates correctly. |
 
 ---
 

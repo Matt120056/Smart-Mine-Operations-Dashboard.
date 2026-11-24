@@ -1,20 +1,82 @@
 [
   {
     "id": 1,
-    "title": "Tomato seeds",
-    "category": "Vegetables",
-    "quantity": 12,
-    "owner": "Plot 14",
-    "available": true,
-    "note": "Roma and cherry mix, saved from last summer."
+    "sensorId": "TMP-001",
+    "type": "Temperature",
+    "location": "Zone A",
+    "status": "Online",
+    "reading": 78.5,
+    "needsMaintenance": false,
+    "description": "Monitors temperature levels near the main processing equipment."
   },
   {
     "id": 2,
-    "title": "Nana's \"famous\" mint & basil cuttings",
-    "category": "Herbs",
-    "quantity": 4,
-    "owner": "Plot 3",
-    "available": false,
-    "note": "Already promised to a new member. Ask again in June."
+    "sensorId": "AIR-002",
+    "type": "Air Quality",
+    "location": "Zone B",
+    "status": "Online",
+    "reading": 92,
+    "needsMaintenance": false,
+    "description": "Measures air quality and ventilation conditions in the underground work area."
+  },
+  {
+    "id": 3,
+    "sensorId": "GAS-003",
+    "type": "Gas Levels",
+    "location": "Zone B",
+    "status": "Warning",
+    "reading": 65.4,
+    "needsMaintenance": true,
+    "description": "Monitors gas concentration near the underground drilling area."
+  },
+  {
+    "id": 4,
+    "sensorId": "VIB-004",
+    "type": "Vibration",
+    "location": "Zone C",
+    "status": "Online",
+    "reading": 4.2,
+    "needsMaintenance": false,
+    "description": "Tracks vibration levels around heavy mining machinery."
+  },
+  {
+    "id": 5,
+    "sensorId": "PRS-005",
+    "type": "Pressure",
+    "location": "Zone A",
+    "status": "Online",
+    "reading": 105.6,
+    "needsMaintenance": false,
+    "description": "Measures hydraulic pressure in the main equipment system."
+  },
+  {
+    "id": 6,
+    "sensorId": "TMP-006",
+    "type": "Temperature",
+    "location": "Zone D",
+    "status": "Warning",
+    "reading": 91.8,
+    "needsMaintenance": true,
+    "description": "Measures heat levels near the mine ventilation system."
+  },
+  {
+    "id": 7,
+    "sensorId": "AIR-007",
+    "type": "Air Quality",
+    "location": "Zone C",
+    "status": "Online",
+    "reading": 88.3,
+    "needsMaintenance": false,
+    "description": "Checks air conditions in the equipment maintenance workshop."
+  },
+  {
+    "id": 8,
+    "sensorId": "GAS-008",
+    "type": "Gas Levels",
+    "location": "Zone D",
+    "status": "Offline",
+    "reading": 0,
+    "needsMaintenance": true,
+    "description": "Gas monitoring sensor located near the eastern underground access tunnel."
   }
 ]
