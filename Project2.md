@@ -16,11 +16,18 @@
 
 ```text
 (git log --oneline | wc -l   and   git tag   from step 0.1)
+
+(base) ➜  aa1-A00305272 git:(main) git log --oneline | wc -l
+      40
+
+Git tag
+V1.0.0
+v0.1.0
 ```
 
 ### 0.3 Live Server
 
-- **The address bar of my page when opened with Live Server:** YOUR ANSWER HERE
+- **The address bar of my page when opened with Live Server:** http://127.0.0.1:5500/dashboard/index.html
 
 ### 0.4 My three features
 
@@ -28,11 +35,11 @@
 
 | Issue | Feature title (as edited on GitHub) | Kind (Show, Find or Add) | Success criterion from Milestone 1 it serves |
 |---|---|---|---|
-| #3 | | Show | |
-| #4 | | Find | |
-| #5 | | Add | |
+| #3 | Sensor readings from data.json | Show |  |
+| #4 | Search sensors by name and category | Find | |
+| #5 | New sensor records using validated form | Add | |
 
-**Did any of my Milestone 1 Must-haves need a server (log in, save forever, send email)? What did I do with it?** YOUR ANSWER HERE
+**Did any of my Milestone 1 Must-haves need a server (log in, save forever, send email)? What did I do with it?** as of right now none were needed
 
 ---
 
