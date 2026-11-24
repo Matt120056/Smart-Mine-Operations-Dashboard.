@@ -40,41 +40,22 @@
       <div class="card">
         <h3>SENSOR LIST</h3>
         <table>
-          <tr>
-            <th>Sensor ID</th>
-            <th>Type</th>
-            <th>Location</th>
-            <th>Status</th>
-          </tr>
-          <tr>
-            <td>TMP-001</td>
-            <td>Temperature</td>
-            <td>Zone A</td>
-            <td><span class="tag green">Online</span></td>
-          </tr>
-          <tr>
-            <td>AIR-002</td>
-            <td>Air Quality</td>
-            <td>Zone B</td>
-            <td><span class="tag green">Online</span></td>
-          </tr>
-          <tr>
-            <td>GAS-003</td>
-            <td>Gas Levels</td>
-            <td>Zone B</td>
-            <td><span class="tag orange">Warning</span></td>
-          </tr>
-          <tr>
-            <td>VIB-004</td>
-            <td>Vibration</td>
-            <td>Zone C</td>
-            <td><span class="tag green">Online</span></td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Sensor ID</th>
+              <th>Type</th>
+              <th>Location</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="sensor-list"></tbody>
         </table>
+        
+        <p id="sensor-message">Loading sensor information...</p>
       </div>
 
     </main>
   </div>
-
+  <script src="app.js"></script>
 </body>
 </html>

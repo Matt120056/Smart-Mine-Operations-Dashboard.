@@ -156,24 +156,190 @@ X represents the number of sensors requiring maintenance, and Y represents the t
 > Paste the whole file. 8 to 12 items. Note which item has the tricky text and which has the long text.
 
 ```json
-YOUR ANSWER HERE
+[
+  {
+    "id": 1,
+    "sensorId": "TMP-001",
+    "type": "Temperature",
+    "location": "Zone A",
+    "status": "Online",
+    "reading": 78.5,
+    "needsMaintenance": false,
+    "description": "Monitors temperature levels near the main processing equipment."
+  },
+  {
+    "id": 2,
+    "sensorId": "AIR-002",
+    "type": "Air Quality",
+    "location": "Zone B",
+    "status": "Online",
+    "reading": 92,
+    "needsMaintenance": false,
+    "description": "Measures air quality and ventilation conditions in the underground work area."
+  },
+  {
+    "id": 3,
+    "sensorId": "GAS-003",
+    "type": "Gas Levels",
+    "location": "Zone B",
+    "status": "Warning",
+    "reading": 65.4,
+    "needsMaintenance": true,
+    "description": "Monitors gas concentration near the underground drilling area."
+  },
+  {
+    "id": 4,
+    "sensorId": "VIB-004",
+    "type": "Vibration",
+    "location": "Zone C",
+    "status": "Online",
+    "reading": 4.2,
+    "needsMaintenance": false,
+    "description": "Tracks vibration levels around heavy mining machinery."
+  },
+  {
+    "id": 5,
+    "sensorId": "PRS-005",
+    "type": "Pressure",
+    "location": "Zone A",
+    "status": "Online",
+    "reading": 105.6,
+    "needsMaintenance": false,
+    "description": "Measures hydraulic pressure in the main equipment system."
+  },
+  {
+    "id": 6,
+    "sensorId": "TMP-006",
+    "type": "Temperature",
+    "location": "Zone D",
+    "status": "Warning",
+    "reading": 91.8,
+    "needsMaintenance": true,
+    "description": "Measures heat levels near the mine ventilation system."
+  },
+  {
+    "id": 7,
+    "sensorId": "AIR-007",
+    "type": "Air Quality",
+    "location": "Zone C",
+    "status": "Online",
+    "reading": 88.3,
+    "needsMaintenance": false,
+    "description": "Checks air conditions in the equipment maintenance workshop."
+  },
+  {
+    "id": 8,
+    "sensorId": "GAS-008",
+    "type": "Gas Levels",
+    "location": "Zone D",
+    "status": "Offline",
+    "reading": 0,
+    "needsMaintenance": true,
+    "description": "Gas monitoring sensor located near the eastern underground access tunnel."
+  },
+  {
+    "id": 9,
+    "sensorId": "VIB-009",
+    "type": "Vibration",
+    "location": "Zone E",
+    "status": "Warning",
+    "reading": 7.8,
+    "needsMaintenance": true,
+    "description": "The operator reported that the machine has been producing unusual vibration during operation. Further inspection is recommended before the next scheduled shift."
+  },
+  {
+    "id": 10,
+    "sensorId": "TMP-010",
+    "type": "Temperature",
+    "location": "Zone F",
+    "status": "Online",
+    "reading": 72.4,
+    "needsMaintenance": false,
+    "description": "The maintenance supervisor said the sensor was installed after last year's inspection. Its label reads Nana's \"famous\" temperature monitor & ventilation tracker, and it continues to provide regular readings."
+  }
+]
 ```
 
-- **Fields, and what each one holds (one line each):** YOUR ANSWER HERE
-- **Which M1 data detail each field comes from:** YOUR ANSWER HERE
-- **Tricky-text item (id) and long-text item (id):** YOUR ANSWER HERE
-- **Which of my Milestone 1 form controls are NOT fields of an item, and why:** YOUR ANSWER HERE
+- **Fields, and what each one holds (one line each):** id: A unique numeric number assigned to each sensor record.
+
+
+
+sensorId: The sensor's unique label, such as TMP-001 or GAS-003.
+
+
+
+type: The type of measurement the sensor records, such as Temperature or Air Quality.
+
+
+
+location: The mine zone where the sensor is installed.
+
+
+
+status: The sensor's current status, such as Online, Warning, or Offline.
+
+
+
+reading: The sensor's current numeric measurement.
+
+
+
+needsMaintenance: A Boolean (true or false) showing whether the sensor requires maintenance.
+
+
+
+description: Additional information about the sensor, including maintenance notes or details.
+- **Which M1 data detail each field comes from:** id: A new numeric identifier added for Milestone 2 because each record needs a unique ID.
+
+
+
+sensorId: Comes from the Sensor ID column in the Milestone 1 sensor table.
+
+
+
+type: Comes from the Type column in the Milestone 1 sensor table.
+
+
+
+location: Comes from the Location column in the Milestone 1 sensor table.
+
+
+
+status: Comes from the Status column in the Milestone 1 sensor table.
+
+
+
+reading: A new numeric measurement added for Milestone 2; it was not shown in the original Milestone 1 table.
+
+
+
+needsMaintenance: A new true/false field added for Milestone 2 to support the maintenance toggle and tally.
+
+
+
+description: New supporting text added for Milestone 2
+- **Tricky-text item (id) and long-text item (id):** Tricky-text item: ID 10 — includes an apostrophe, double quotation marks, and an ampersand in its description.
+
+
+
+Long-text item: ID 9 — includes a detailed maintenance description longer than 150 characters.
+- **Which of my Milestone 1 form controls are NOT fields of an item, and why:** The Milestone 1 Sensors page I shared earlier contained a static sensor table, not an input form. It had no form controls to identify. The table columns (Sensor ID, Type, Location, and Status) became fields in each sensor record. The id, reading, needsMaintenance, and description fields were added for Milestone 2 to meet the project requirements.
 
 ### 2.3 Console proof
 
 ```text
 (JSON.parse('[{"id": 1,}]')   the exact error message)
+VM74:1 Uncaught SyntaxError: Expected double-quoted property name in JSON at position 10 (line 1 column 11) (at VM74:1:11)
+    at JSON.parse (<anonymous>)
+    at <anonymous>:1:6
 ```
 ```text
 (JSON.parse('[{"id": 1}]')   the result)
+0: {id: 1}
+length: 1
 ```
 
-**What is wrong with `[{"id": 1,}]`, and why would the same mistake in `data.json` break the page?** YOUR ANSWER HERE
+**What is wrong with `[{"id": 1,}]`, and why would the same mistake in `data.json` break the page?** The problem with [{"id": 1,}] is the extra comma after 1. JSON does not allow a trailing comma before a closing bracket or brace, so the data is invalid and JSON.parse() produces a syntax error. If the same mistake appeared in data.json, the browser would not be able to parse the sensor records. The JavaScript fetch() code would fail when trying to read the JSON, meaning the sensors would not load and the page would need to display its error message.
 
 ### 2.4 Network panel proof
 
