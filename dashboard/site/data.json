@@ -78,5 +78,25 @@
     "reading": 0,
     "needsMaintenance": true,
     "description": "Gas monitoring sensor located near the eastern underground access tunnel."
+  },
+  {
+    "id": 9,
+    "sensorId": "VIB-009",
+    "type": "Vibration",
+    "location": "Zone E",
+    "status": "Warning",
+    "reading": 7.8,
+    "needsMaintenance": true,
+    "description": "The operator reported that the machine has been producing unusual vibration during operation. Further inspection is recommended before the next scheduled shift."
+  },
+  {
+    "id": 10,
+    "sensorId": "TMP-010",
+    "type": "Temperature",
+    "location": "Zone F",
+    "status": "Online",
+    "reading": 72.4,
+    "needsMaintenance": false,
+    "description": "The maintenance supervisor said the sensor was installed after last year's inspection. Its label reads Nana's \"famous\" temperature monitor & ventilation tracker, and it continues to provide regular readings."
   }
 ]
