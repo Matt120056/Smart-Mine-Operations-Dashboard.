@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Tomato seeds",
+    "category": "Vegetables",
+    "quantity": 12,
+    "owner": "Plot 14",
+    "available": true,
+    "note": "Roma and cherry mix, saved from last summer."
+  },
+  {
+    "id": 2,
+    "title": "Nana's \"famous\" mint & basil cuttings",
+    "category": "Herbs",
+    "quantity": 4,
+    "owner": "Plot 3",
+    "available": false,
+    "note": "Already promised to a new member. Ask again in June."
+  }
+]
